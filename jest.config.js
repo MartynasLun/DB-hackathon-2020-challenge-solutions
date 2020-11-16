@@ -6,5 +6,5 @@ module.exports = {
     transformIgnorePatterns: ["node_modules/(?!(test-juggler)/)"],
     verbose: true,
     reporters: ["default", ["jest-junit", { outputDirectory: "junit-report" }]],
-    testTimeout: 60000
+    testTimeout: 6000000
 };
