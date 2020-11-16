@@ -1,0 +1,31 @@
+{
+    "name": "hackathon_2020",
+    "version": "0.0.0",
+    "description": "hackathon_2020",
+    "scripts": {
+        "lint": "eslint **/*.js",
+        "test": "jest",
+        "visual": "jest -t=visual",
+        "sudoku": "jest sudoku/sudoku.test.js"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run lint",
+            "pre-push": "npm run lint"
+        }
+    },
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MartynasLun/DB-hackathon-2020-challenge-solutions.git"
+    },
+    "devDependencies": {
+        "eslint": "^6.8.0",
+        "husky": "^4.2.1"
+    },
+    "dependencies": {
+        "jest": "^26.1.0",
+        "sudoku-solver-js": "^0.1.4",
+        "test-juggler": "^2.0.1"
+    }
+}
