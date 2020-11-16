@@ -6,7 +6,8 @@
         "lint": "eslint **/*.js",
         "test": "jest",
         "visual": "jest -t=visual",
-        "sudoku": "jest sudoku/sudoku.test.js"
+        "sudoku": "jest sudoku/sudoku.test.js",
+        "paperclips": "jest paperclips/paperclips.test.js"
     },
     "husky": {
         "hooks": {
